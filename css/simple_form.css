@@ -1,0 +1,55 @@
+.headerContainer {
+    display: flex;
+    background: tomato;
+    align-content: center;
+    font-weight: bold;
+    flex-flow: column wrap;
+    margin-bottom: 20px;
+}
+body {
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding : 2em;
+} 
+div {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+} 
+input {
+    flex: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 280px;
+    flex-grow: inherit;  
+}
+input, label, button {
+    line-height: 1.5;
+    font-size: 16px;
+}
+label {
+    text-align: right;
+    width: 30%;
+}
+button {
+    width: 60%;
+    margin: auto;
+}
+error-output {
+    flex: auto;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    label {
+        width: 40%;
+        font-size: 14px;
+    }
+}
